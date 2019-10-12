@@ -1,5 +1,6 @@
 import React from 'react';
-import { Jumbotron, Button, Container, Row, Col } from 'reactstrap';
+import { Jumbotron, Button, Row, Col } from 'reactstrap';
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 let JumboDisplay = (props) => {
     let styles = {
@@ -14,10 +15,10 @@ let JumboDisplay = (props) => {
         <p className="lead">
             <Row>
                 <Col>
-                    <Button id="decrease" color="warning" size="lg" block onClick = {props.setCounter}> -1 </Button>
+                    <Button id="decrease" color="warning" size="lg" block onClick = {props.setCounter}><FaMinus/></Button>
                 </Col>
                 <Col>
-                    <Button id="increase" color="success" size="lg" block onClick = {props.setCounter}> +1 </Button>
+                    <Button id="increase" color="success" size="lg" block onClick = {props.setCounter}><FaPlus/></Button>
                 </Col>
             </Row>
         </p>
